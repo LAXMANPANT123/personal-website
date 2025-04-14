@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head as index.html -->
+    <title>Your Name | Portfolio</title>
+</head>
+<style>
+    /* Base Styles */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --light-color: #ecf0f1;
+    --dark-color: #333;
+    --success-color: #2ecc71;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+#navbar {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--dark-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* Hero Section */
+.hero {
+    padding: 8rem 0 4rem;
+    background-color: var(--light-color);
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content h1 span {
+    color: var(--primary-color);
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #2980b9;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background: var(--secondary-color);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+/* Portfolio Styles */
+.portfolio-section {
+    padding: 5rem 0;
+}
+
+.portfolio-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-info h3 {
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.project-info p {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline:hover {
+    background: var(--primary-color);
+    color: white;
+}
+</style>
+<body>
+    <!-- Same navigation as index.html -->
+    
+    <section class="portfolio-section">
+        <div class="container">
+            <h2 >My Projects</h2>
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="flipcart.jpg" alt="Project 1">
+                    <div class="project-info">
+                        <h3>FILPCART CLONE</h3>
+                        <p>Brief description of the project and what technologies were used.</p>
+                        <div class="project-links">
+                            <a href="https://www.flipkart.com/" class="btn">Live Demo</a>
+                            <a href="#" class="btn btn-outline">Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="jiomart.jpg" alt="Project 2">
+                    <div class="project-info">
+                        <h3>JIOMART CLONE</h3>
+                        <p>I ahve made a JIOMART for my project.</p>
+                        <div class="project-links">
+                            <a href="https://www.jiomart.com/" class="btn">Live Demo</a>
+                            <a href="#" class="btn btn-outline">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="cpu.jpg" alt="Project 3">
+                    <div class="project-info">
+                        <h3>CPU</h3>
+                        <p>I have made a  Gaming cpu clone for my project.</p>
+                        <div class="project-links">
+                            <a href="https://voltedpc.in/lieutenant-i5-12400f-rtx-3060-" class="btn">Live Demo</a>
+                            <a href="#" class="btn btn-outline">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="predator.jpg" alt="Project 4">
+                    <div class="project-info">
+                        <h3>PREDATOR</h3>
+                        <p>I have made a predator app clone for my project.</p>
+                        <div class="project-links">
+                            <a href="https://www.acer.com/in-en/predator/laptops" class="btn">Live Demo</a>
+                            <a href="#" class="btn btn-outline">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="Amazon.jpg" alt="Project 5">
+                    <div class="project-info">
+                        <h3>Amazon</h3>
+                        <p>I have made a Amazon clone for my project.</p>
+                        <div class="project-links">
+                            <a href="https://www.amazon.in/ref=nav_logo" class="btn">Live Demo</a>
+                            <a href="#" class="btn btn-outline">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="charger.jpg" alt="Project 6">
+                    <div class="project-info">
+                        <h3>CHARGER</h3>
+                        <p>I have made a charger for my project.</p>
+                        <div class="project-links">
+                            <a href="https://chargingcable.in/?srsltid=AfmBOoqqZPQwUNTiAwgXj5JMi7oCso-UJ_qgA36oMsw8trlJ6wyy4YYN" class="btn">Live Demo</a>
+                            <a href="#" class="btn btn-outline">Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Same footer as index.html -->
+</body>
+</html>
